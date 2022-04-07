@@ -2,7 +2,7 @@
 
 #### `GetComponent`로 속성 변경시키기   
 - `gameObject.GetComponent<가져올 컴퍼넌트>()`   
--        예시 :  `gameObject.GetComponent<BoxCollider>().isTrigger = true;`   
+-  예시 : `gameObject.GetComponent<BoxCollider>().isTrigger = true;`   
        
 - 가져올 컴퍼넌트에 해당 오브젝트가 가진 스크립트(클래스)를 가져올 수 있다.   
 
