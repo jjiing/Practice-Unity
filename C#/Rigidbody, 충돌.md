@@ -25,8 +25,9 @@ is trigger : 충돌x 범위로만 존재할 수 있게 하는 것 (ex. 힐장판
 ## 충돌의 종류 
 - collision 충돌
 - trigger 충돌 
+<br>
 
-![](https://imagedelivery.net/v7-TZByhOiJbNM9RaUdzSA/7c9638f9-e53b-48f3-8250-989c0a585300/public)
+![충돌의 종류](https://imagedelivery.net/v7-TZByhOiJbNM9RaUdzSA/7c9638f9-e53b-48f3-8250-989c0a585300/public)
 
 
 <br><br>
@@ -48,16 +49,16 @@ private void OnCollisionEnter(Collision collision)
  ```
 <br>
 
-- 그 외에 충돌 중, 충돌 끝 시점에 실행되는 함수(트리거 충돌 시 예시)
- `private void OnTriggerStay(Collider other)`
-`private void OnTriggerExit(Collider other)`
+- 그 외에 충돌 중, 충돌 끝 시점에 실행되는 함수(트리거 충돌 시 예시)   
+ `private void OnTriggerStay(Collider other)`   
+`private void OnTriggerExit(Collider other)`   
 
 <br>
 
-- 충돌 후 오브젝트를 삭제하기(콜리전 충돌 시 예시 )
-`Destroy(gameObject);` : 자기자신 없어짐
-`Destroy(collision.gameObject);`  : 부딪힌 오브젝트 없어짐
-`Destroy(collision);` : 부딪힌 물체의 _콜라이더만_ 없어짐
+- 충돌 후 오브젝트를 삭제하기(콜리전 충돌 시 예시 )   
+`Destroy(gameObject);` : 자기자신 없어짐   
+`Destroy(collision.gameObject);`  : 부딪힌 오브젝트 없어짐   
+`Destroy(collision);` : 부딪힌 물체의 _콜라이더만_ 없어짐   
 
 <br>
 
@@ -70,13 +71,14 @@ if (collision.gameObject.tag == "wall")
 ```
 
 
-tag가 wall인 경우에만 실행
-`gameObject.GetComponent<wall>`에서  `wall`은 태그가 아니고 충돌한 object가 가지고 있는 스크립트(`ReduceDurability()`라는 함수를 포함한)이다.
+tag가 wall인 경우에만 실행   
+`gameObject.GetComponent<wall>`에서  `wall`은 태그가 아니고    
+충돌한 object가 가지고 있는 스크립트(`ReduceDurability()`라는 함수를 포함한)이다.
         
 
 
 <br>
 
-- 특정 여러 오브젝트를 지정할 때
-`if(coillision.gameObject<wall>()!=null)` 
+- 특정 여러 오브젝트를 지정할 때   
+`if(coillision.gameObject<wall>()!=null)`    
 wall 스크립트(클래스)가지고 있으면 실행
