@@ -4,6 +4,7 @@
 ## 오브젝트 transform 설정
 
 <br>
+
 1. 오브젝트 위치 설정
 `gameObject.transform.position = new Vector3(10,10,10);`
 
@@ -14,7 +15,7 @@
 `gameObject.transform.Translate(Vector3.forward*0.5f);`
  이때 로컬축 기준이 디폴트이고 , 월드축 기준으로 하려면 `Space.World` 옵션 추가
  Vector3.forward x 0.5f = 방향 x 힘
-
+ 
 4. 오브젝트 크기 설정
 `transform.localScale = new Vector3(2,2,2);`
 `ransform.localScale = transform.localScale*1.1f;`
