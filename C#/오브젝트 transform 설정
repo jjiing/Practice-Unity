@@ -1,5 +1,7 @@
 0405
 
+## 오브젝트 transform 설정
+
 1. 오브젝트 위치 설정
 `gameObject.transform.position = new Vector3(10,10,10);`
 
@@ -21,6 +23,7 @@
 Vector3.forward=new Vector3(0,0,1)
 
 <br><br>
+
 - 키 눌렀을 때에만 실행시키기
 `if(input.GetKeyDown(KeyCode.Space)){}` 
 키 눌렀을때 true값이 되게 한다.
@@ -29,6 +32,7 @@ Vector3.forward=new Vector3(0,0,1)
 
 
 <br><br>
+
 - 멤버변수
 
 `public GameObject target;` public으로 전역변수를 설정하게 되면 unity inspector 창에서 그 값을 직접 지정해줄 수 있다.
