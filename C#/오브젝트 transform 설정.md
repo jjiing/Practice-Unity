@@ -9,14 +9,17 @@
 `gameObject.transform.position = new Vector3(10,10,10);`
 
 2. 오브젝트 회전시키기
+
 `gameObject.transform.Rotate(Vector3.up,45); (축_방향의 기준, 각도)`
 
 3. 오브젝트 이동시키기
+
 `gameObject.transform.Translate(Vector3.forward*0.5f);`
  이때 로컬축 기준이 디폴트이고 , 월드축 기준으로 하려면 `Space.World` 옵션 추가
  Vector3.forward x 0.5f = 방향 x 힘
  
 4. 오브젝트 크기 설정
+
 `transform.localScale = new Vector3(2,2,2);`
 `ransform.localScale = transform.localScale*1.1f;`
  아래의 코드를 Update 이벤트함수에 적용시키면 계속해서 오브젝트의 크기가 커진다.
