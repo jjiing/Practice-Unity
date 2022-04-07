@@ -1,7 +1,9 @@
-
+0405
+<br>
 
 ## 오브젝트 transform 설정
 
+<br>
 1. 오브젝트 위치 설정
 `gameObject.transform.position = new Vector3(10,10,10);`
 
@@ -22,7 +24,7 @@
 그리고 `Vector3.forward`, `Vector3.up` 등의 개념은 이미 많이 쓰이는 벡터 좌표를 일반화 시켜놓은 것이다.
 Vector3.forward=new Vector3(0,0,1)
 
-<br><br>
+<br>
 
 - 키 눌렀을 때에만 실행시키기
 `if(input.GetKeyDown(KeyCode.Space)){}` 
@@ -31,7 +33,7 @@ Vector3.forward=new Vector3(0,0,1)
 
 
 
-<br><br>
+<br>
 
 - 멤버변수
 
